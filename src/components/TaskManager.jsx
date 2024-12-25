@@ -4,23 +4,7 @@ import { useState } from "react";
 import TaskItems from "./TaskItems";
 export default function Todo() {
 
-    const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            name: 'Task 1',
-            status: 'active',
-        },
-        {
-            id: 2,
-            name: 'Task 2',
-            status: 'active',
-        },
-        {
-            id: 3,
-            name: 'Task 3',
-            status: 'active',
-        }
-    ]);
+    const [tasks, setTasks] = useState([]);
 
     /**
      * On submit click, add the item to the list of tasks
