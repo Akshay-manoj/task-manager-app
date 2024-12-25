@@ -1,5 +1,6 @@
 
 import { ListGroup, Form } from "react-bootstrap"
+
 export default function CompletedTasks({ completedTasks }) {
     return (
         <>
@@ -7,7 +8,6 @@ export default function CompletedTasks({ completedTasks }) {
             {!completedTasks.length && <p className="text-center my-3">No completed tasks</p>}
             <ListGroup className="mt-2">
                 {completedTasks && completedTasks.map((task) => (
-
                     <ListGroup.Item key={task.id}>
                         <Form.Check
                             type="checkbox"

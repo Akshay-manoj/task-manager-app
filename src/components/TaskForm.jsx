@@ -4,6 +4,13 @@ function TaskForm({ addTask }) {
     const [input, setInput] = useState('');
     const [error, setError] = useState({ show: false, message: '' });
 
+    /**
+     * On form handle submit, if the input is empty, show an error message.
+     * Else, add the task to the task list and reset the input field.
+     * 
+     * @param {*} e 
+     * @returns 
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
 

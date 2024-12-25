@@ -2,22 +2,22 @@ body {
 	background: #fff;
 	color: #333;
 	font-family: Lato, sans-serif;
-	background-color:#e4e4e4;
+	background-color: #e4e4e4;
 }
 
 .container {
 	display: block;
 	width: 400px;
 	margin: 10px auto 100px;
-	background-color:#fff;
-	padding:0px 10px 10px 10px;
-	border-radius:10px
+	background-color: #fff;
+	padding: 0px 10px 10px 10px;
+	border-radius: 10px
 }
 
 h2 {
-	text-align:center;
-	padding-top:10px;
-	margin-bottom:0px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 0px;
 }
 
 ul {
@@ -46,33 +46,30 @@ label[for='new-task'] {
 	text-transform: uppercase;
 }
 
-
-
-
 li {
 	overflow: hidden;
 	padding: 20px 0;
 	border-bottom: 1px solid #eee;
 }
 
-li > input[type="checkbox"] {
+li>input[type="checkbox"] {
 	margin: 0 10px;
 	position: relative;
 	top: 15px;
 }
 
-li > label {
+li>label {
 	font-size: 18px;
 	line-height: 40px;
 	width: 237px;
 	padding: 0 0 0 11px;
 }
 
-li > input[type="text"] {
+li>input[type="text"] {
 	width: 226px;
 }
 
-li > .delete:hover {
+li>.delete:hover {
 	color: #CF2323;
 }
 
@@ -81,9 +78,6 @@ li > .delete:hover {
 	text-decoration: line-through;
 	color: #888;
 }
-
-
-
 
 ul li input[type=text] {
 	display: none;
@@ -95,4 +89,4 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
 	display: none;
-} 
+}

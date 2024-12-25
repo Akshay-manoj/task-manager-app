@@ -1,29 +1,20 @@
 
-import { ListGroup, Form } from "react-bootstrap"
+import { ListGroup } from "react-bootstrap"
+import ActiveTaskItem from "./ActiveTaskItem";
 
-export default function ActiveTasks({ activeTasks, updateTask }) {
-
-    const updateTaskComplete = (e) => {
-        updateTask(e.target.value, e.target.checked ? 'completed' : 'active');
-    }
-
+export default function ActiveTasks({ activeTasks, updateTask, removeTask }) {
     return (
         <>
             <h3>Active Tasks</h3>
             {!activeTasks.length && <p className="text-center my-3">No active tasks</p>}
             <ListGroup className="mt-2">
                 {activeTasks && activeTasks.map((task) => (
-
-                    <ListGroup.Item key={task.id}>
-                        <Form.Check
-                            type="checkbox"
-                            id="default-checkbox"
-                            value={task.id}
-                            label={task.name}
-                            onChange={updateTaskComplete}
-                        />
-                    </ListGroup.Item>
-
+                    <ActiveTaskItem
+                        task={task}
+                        key={task.id}
+                        updateTask={updateTask}
+                        removeTask={removeTask}
+                    />
                 ))}
             </ListGroup>
         </>
